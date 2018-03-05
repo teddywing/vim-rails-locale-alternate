@@ -10,5 +10,5 @@ function! s:SplitAlternate(key)
 endfunction
 
 
-command! -buffer -nargs=1 SRailsLocaleAlternate :call s:SplitAlternate(<args>)
-command! -buffer -nargs=1 VRailsLocaleAlternate :call s:SplitAlternate(<args>)
+command! -buffer -nargs=1 SRailsLocaleAlternate :call s:SplitAlternate(<q-args>)
+command! -buffer -nargs=1 VRailsLocaleAlternate :call s:SplitAlternate(<q-args>)
