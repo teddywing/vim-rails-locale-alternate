@@ -1,0 +1,62 @@
+*rails_locale_alternate.txt*  Commands to open alternate Rails locale files
+
+Author:  Teddy Wing <http://teddywing.com>
+License: GPLv3+
+Version: 0.0.1
+
+==============================================================================
+INTRODUCTION                                          *rails_locale_alternate*
+
+Makes it easier to open alternate Rails locale files. While editing a locale
+file, you may want to reference the translations of another language. This
+plugin provides commands to open a different language version of the current
+locale file in a separate window.
+
+==============================================================================
+COMMANDS                                     *rails_locale_alternate-commands*
+
+						*RailsLocaleAlternate*
+:RailsLocaleAlternate {language-code}
+		Open an alternate language Rails locale file based on the
+		current buffer. The {language-code} must be a two-letter
+		language code and match the code in the alternate's file name.
+		Example: >
+		    :RailsLocaleAlternate fr
+<		This opens the French version of the current locale file in a
+		new split.
+
+						*ERailsLocaleAlternate*
+:ERailsLocaleAlternate {language-code}
+		Same as ":RailsLocaleAlternate", but opens in the current
+		buffer.
+
+						*SRailsLocaleAlternate*
+:SRailsLocaleAlternate {language-code}
+		Same as ":RailsLocaleAlternate", but opens in a new horizontal
+		split.
+
+						*VRailsLocaleAlternate*
+:VRailsLocaleAlternate {language-code}
+		Same as ":RailsLocaleAlternate", but opens in a new vertical
+		split.
+
+==============================================================================
+LICENSE                                       *rails_locale_alternate-license*
+
+Copyright (c) 2018 Teddy Wing
+
+Vim Rails Locale Alternate is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+Vim Rails Locale Alternate is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Vim Rails Locale Alternate. If not, see
+<http://www.gnu.org/licenses/>.
+
+ vim:tw=78:ts=8:ft=help:norl:
