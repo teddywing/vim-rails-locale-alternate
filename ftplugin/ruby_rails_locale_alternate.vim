@@ -1,6 +1,6 @@
 function! s:AlternateLocale(key)
 	let filename = expand('%')
-	let alternate = substitute(filename, '..\.yml', a:key . '.yml', '')
+	let alternate = substitute(filename, '\a\{2}\.yml', a:key . '.yml', '')
 	return alternate
 endfunction
 
